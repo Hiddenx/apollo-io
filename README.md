@@ -52,7 +52,7 @@ The above terraform should start launching below resources -
 address: x.x.x.x
 ... 
 ```
-- Replace all .yml files in `gke/manifests` having this `<project-id>.<addresses>.xip.io` with your GCP project-id and the address we just noted down in the earlier step.
+- Replace `managed-cert.yml` file in `gke/manifests` having this `<project-id>.<addresses>.xip.io` with your GCP project-id and the address we just noted down in the earlier step.
 - Run `kubectl apply -f aio.yml` creates deployment, service, hpa components for k8s-helloworld app.
 - Run `kubectl apply -f managed-cert.yml` to create Google-managed SSL certificate for your service.
 - Run `kubectl apply -f ingress.yml`
