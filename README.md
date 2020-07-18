@@ -40,8 +40,8 @@ The above terraform should start launching below resources -
 
 - Start by building the docker image `docker build -t .`
 - Make sure you have push and pull permissions to GCR. [Setup Instructions](https://cloud.google.com/container-registry/docs/pushing-and-pulling)
-- Tag your image `docker tag k8s-helloworld gcr.io/<-GCP-PROJECT-ID>/k8s-helloworld`
-- Finally push your image `docker push gcr.io/apollo-io/k8s-helloworld`
+- Tag your image `docker tag k8s-helloworld gcr.io/<GCP-PROJECT-ID>/k8s-helloworld`
+- Finally push your image to GCR `docker push gcr.io/apollo-io/k8s-helloworld`
 
 ### Deploy GKE Manifests
 
