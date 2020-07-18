@@ -56,10 +56,10 @@ address: x.x.x.x
 - Run `kubectl apply -f aio.yml` creates deployment, service, hpa components for k8s-helloworld app.
 - Run `kubectl apply -f managed-cert.yml` to create Google-managed SSL certificate for your service.
 - Run `kubectl apply -f ingress.yml`
-- Run `kubectl get ingress`, you should see your ingress with the service endpoint in HOSTS field.
+- Run `kubectl get ingress`, you should see your ingress created. 
 ```
 ~ ❯ kubectl get ing
-NAME                     HOSTS                          ADDRESS   PORTS   AGE
-k8s-helloworld-ingress   <gcp-project-id>.<ip>.xip.io             80      72m
+NAME                     HOSTS   ADDRESS        PORTS   AGE
+k8s-helloworld-ingress   *       x.x.x.x   80      3h14m
 ```
-- Now try to resolve this URL on your favorite browser with HTTPS - `<gcp-project-id>.<ip>.xip.io`
+- Now try to resolve this URL on your favorite browser with HTTPS - `<gcp-project-id>.<ip-address>.xip.io`
