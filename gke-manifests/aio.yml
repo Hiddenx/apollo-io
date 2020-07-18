@@ -55,11 +55,3 @@ spec:
   minReplicas: 3
   maxReplicas: 10
   targetCPUUtilizationPercentage: 50
-
-  - host: <project-id>.<address>.xip.io
-    http:
-      paths:
-      - backend:
-          serviceName: k8s-helloworld-service
-          servicePort: 80
-        path: /*
