@@ -4,4 +4,4 @@ metadata:
   name: k8s-helloworld
 spec:
   domains:
-    - apollo-io.34.96.79.155.xip.io
+    - <project-id>.<address>.xip.io
