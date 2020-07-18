@@ -20,7 +20,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 90
       containers:
-      - image: gcr.io/apollo-io-assignment/k8s-helloworld:v3
+      - image: gcr.io/apollo-io-assignment/k8s-helloworld
         name: k8s-helloworld
         readinessProbe:
           httpGet:
