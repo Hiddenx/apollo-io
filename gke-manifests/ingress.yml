@@ -7,7 +7,7 @@ metadata:
     networking.gke.io/managed-certificates: k8s-helloworld
 spec:
   rules:
-  - host: apollo-io.34.74.44.96.xip.io
+  - host: <project-id>.<addresses>.xip.io
     http:
       paths:
       - backend:
