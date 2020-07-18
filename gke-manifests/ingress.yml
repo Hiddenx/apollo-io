@@ -6,11 +6,7 @@ metadata:
     kubernetes.io/ingress.global-static-ip-name: k8s-helloworld
     networking.gke.io/managed-certificates: k8s-helloworld
 spec:
-  rules:
-  - host: <project-id>.<addresses>.xip.io
-    http:
-      paths:
-      - backend:
-          serviceName: k8s-helloworld-service
-          servicePort: 80
-        path: /*
+  - backend:
+      serviceName: k8s-helloworld-service
+      servicePort: 80
+    path: /*
