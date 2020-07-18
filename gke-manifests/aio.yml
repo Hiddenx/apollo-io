@@ -56,7 +56,7 @@ spec:
   maxReplicas: 10
   targetCPUUtilizationPercentage: 50
 
-  - host: apollo-io.34.74.44.96.xip.io
+  - host: <project-id>.<replace-me>.xip.io
     http:
       paths:
       - backend:
